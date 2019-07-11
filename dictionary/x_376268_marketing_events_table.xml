@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Marketing Events Table" max_length="40" name="x_376268_marketing_events_table" type="collection">
+        <element label="Budget" max_length="20" name="budget" type="currency"/>
+        <element label="end date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="event type" max_length="40" name="event_type" type="choice">
+            <choice/>
+        </element>
+        <element label="location" max_length="32" name="location" reference="x_376268_marketing_location_cmn_location_" type="reference"/>
+        <element display="true" label="name" max_length="40" name="name" type="string"/>
+        <element label="Sponser" max_length="32" name="sponser" reference="x_376268_marketing_company__core_company_" type="reference"/>
+        <element label="start date" max_length="40" name="start_date" type="glide_date"/>
+        <index name="index">
+            <element name="location"/>
+        </index>
+        <index name="index2">
+            <element name="sponser"/>
+        </index>
+    </element>
+</database>
